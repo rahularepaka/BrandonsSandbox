@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'VarelaRound';
+    src: url('../varelaround.ttf');
+}
+
+:root {
+    --text-color: black;
+    --inverse-text-color: white;
+    --background-color: white;
+    --sand-color: rgb(236, 229, 209);
+    --sandstone-color: rgb(201, 175, 116);
+    --sky-color: rgb(202, 227, 248);
+    --ocean-color: rgb(98, 168, 224);
+    --transition-time: 0.4s;
+}
+
+[data-theme="dark"] {
+    --text-color: #ddd;
+    --inverse-text-color: rgb(40,40,42);
+    --background-color: rgb(40,40,42);
+    --sand-color: rgb(63, 59, 46);
+    --sandstone-color: rgb(201, 175, 116);
+    --sky-color: rgb(202, 227, 248);
+    --ocean-color: rgb(98, 168, 224);
+    --transition-time: 0.4s;
+}

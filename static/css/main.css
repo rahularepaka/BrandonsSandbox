@@ -1,0 +1,226 @@
+@import './global.css';
+
+html {
+    background-color: var(--background-color);
+}
+
+::selection {
+    background: var(--sand-color);
+}  
+
+body {
+    color: var(--text-color);
+    font-size: large;
+    font-family:'VarelaRound';
+    margin: 0;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: var(--background-color);
+    position: fixed;
+    height: 6rem;
+    align-items: center;
+    z-index: 1;
+    transition: var(--transition-time);
+}
+
+.header-logo {
+    position: absolute;
+    left: 0;
+    padding-left: 5rem;
+}
+
+.header-logo a {
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.header-navbar {
+    right: 0;
+    position: absolute;
+    padding-right: 5rem;
+    align-items: center;
+}
+
+.header-navbar-item {
+    display: inline-block;
+}
+
+.header-navbar-item a {
+    color: var(--sandstone-color);
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+}
+
+.header-navbar-item a:hover {
+    opacity: 0.5;
+}
+
+#content-container {
+    margin-top: 6rem;
+    padding: 2rem 10%;
+    position: relative;
+    min-height: calc(100vh - 14rem);
+    opacity: 0;
+    transition: var(--transition-time);
+    background-color: var(--background-color);;
+}
+
+.footer-container {
+    display: flex;
+    min-width: 100%;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    bottom: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 4rem;
+    transition: var(--transition-time);
+}
+
+.footer-copyright {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    font-size: small;
+}
+
+.footer-external-links {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.footer-external-link {
+    display: inline;
+    padding: 5px;
+}
+
+.footer-external-link a {
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+.footer-external-link a:hover {
+    opacity: 0.3;
+}
+
+a:not(.button) {
+    text-decoration: none;
+    color: var(--ocean-color);
+    transition: var(--transition-time);
+}
+
+a:not(.button):hover {
+    opacity: 0.5;
+}
+
+
+.theme-switch-wrapper {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: var(--sandstone-color);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: var(--transition-time);
+}
+
+.slider:before {
+    background-color: var(--sand-color);
+    bottom: 5px;
+    content: "";
+    height: 15px;
+    left: 5px;
+    position: absolute;
+    transition: var(--transition-time);
+    width: 15px;
+}
+
+input:checked + .slider {
+    background-color: var(--ocean-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+    background-color: var(--sky-color);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.button {
+    color: var(--ocean-color);
+    background-color: none;
+    border-color: var(--ocean-color);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    font-size: medium;
+    transition: var(--transition-time);
+    text-decoration: none;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--ocean-color);
+}
+
+.deadbutton {
+    color: gray;
+    border-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: medium;
+    cursor: default;
+    opacity: 0.5;
+}

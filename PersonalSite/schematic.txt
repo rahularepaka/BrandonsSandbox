@@ -1,0 +1,6 @@
+Pages:
+* Home/about me
+* Blog
+* Resume
+* Contact
+* Projects

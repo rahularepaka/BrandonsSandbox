@@ -1,0 +1,48 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        {% block style %}{% endblock %}
+    </head>
+    <body>
+        <div id="root">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href='{% url 'home' %}'>brandon's sandbox 🏖️</a>
+                </div>
+                <div class="header-navbar">
+                    <div class="header-navbar-item"><a href="{% url 'home' %}">about</a></div>
+                    <div class="header-navbar-item"><a href="{% url 'resume' %}">resume</a></div>
+                    <div class="header-navbar-item"><a href="{% url 'projects' %}">projects</a></div>
+                    <div class="header-navbar-item"><a href="#">blog</a></div>
+                    <div class="header-navbar-item"><a href="{% url 'contact' %}">contact</a></div>
+                </div>
+            </div>
+            <div id="content-container">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="footer-container">
+                <div class="footer-copyright">© Brandon Lee, 2021 • all rights reserved</div>
+                <div class="footer-external-links">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                        <div style="font-style: normal;">&ensp;<b>☾</b></div>
+                    </div>
+                    <div class="footer-external-link" title="GitHub"><a href="http://github.com/dabslee/" target="_blank">😸</a></div>
+                    <div class="footer-external-link" title="Email"><a href="mailto:brandon.sangmin.lee@gmail.com">📧</a></div>
+                    <div class="footer-external-link" title="LinkedIn"><a href="https://www.linkedin.com/in/brandon-sangmin-lee/" target="_blank">💼</a></div>
+                    <div class="footer-external-link" title="FaceBook"><a href="https://www.facebook.com/brandon.sangmin.lee/" target="_blank">📘</a></div>
+                    <div class="footer-external-link" title="Instagram"><a href="https://www.instagram.com/thebslee/" target="_blank">📸</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="{% static 'main.js' %}"></script>
+    </footer>
+</html>
