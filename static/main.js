@@ -2,10 +2,13 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  var header = document.getElementsByClassName("header-container")[0];
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementsByClassName("header-container")[0].style.height = "3rem";
+    header.style.height = "3rem";
+    header.style.backgroundColor = "var(--offset-background-color)";
   } else {
-    document.getElementsByClassName("header-container")[0].style.height = "6rem";
+    header.style.height = "6rem";
+    header.style.backgroundColor = "var(--background-color)";
   }
 }
 

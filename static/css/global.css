@@ -7,6 +7,7 @@
     --text-color: black;
     --inverse-text-color: white;
     --background-color: white;
+    --offset-background-color: rgb(241, 238, 227);
     --sand-color: rgb(236, 229, 209);
     --sandstone-color: rgb(201, 175, 116);
     --sky-color: rgb(202, 227, 248);
@@ -18,6 +19,7 @@
     --text-color: #ddd;
     --inverse-text-color: rgb(40,40,42);
     --background-color: rgb(40,40,42);
+    --offset-background-color: #444;
     --sand-color: rgb(63, 59, 46);
     --sandstone-color: rgb(201, 175, 116);
     --sky-color: rgb(202, 227, 248);
