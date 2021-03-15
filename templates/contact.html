@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
 
 {% block content %}
-contact
+<div class="centerbox">
+    <img src="{% static 'img/food.png' %}" style="width:15%; margin-bottom: 2rem;"></img>
+    <p>📧 Email: <a href="mailto:brandon.sangmin.lee@gmail.com">brandon.sangmin.lee@gmail.com</a><br>
+        📞 Phone: <a href="tel:224-600-9625">(224) 600-9625</a><br><br>
+        💼 LinkedIn: <a href="https://www.linkedin.com/in/brandon-sangmin-lee/" target="_blank">brandon-sangmin-lee</a><br>
+        📘 Facebook: <a href="https://www.facebook.com/brandon.sangmin.lee/" target="_blank">brandon.sangmin.lee</a><br>
+        📸 Instagram: <a href="https://www.instagram.com/thebslee//" target="_blank">thebslee</a>
+    </p>
+</div>
 {% endblock %}

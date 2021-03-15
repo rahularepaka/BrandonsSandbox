@@ -203,6 +203,7 @@ input:checked + .slider:before {
     font-size: medium;
     transition: var(--transition-time);
     text-decoration: none;
+    background-color: rgba(0,0,0,0);
 }
 
 .button:hover {

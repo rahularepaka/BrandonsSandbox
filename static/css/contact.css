@@ -1,0 +1,58 @@
+.centerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 14rem - 2rem);
+    width: 100%;
+    flex-direction: column;
+}
+
+.centerbox2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    flex-direction: row;
+}
+
+.vertical-row {
+    Float:left;
+    height:200px;
+    width:1px; /* edit this if you want */
+    background-color: rgba(128,128,128,0.5);
+}
+
+.centercolumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 25%;
+    padding: 0 3rem;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width:100%;
+    font-family: 'VarelaRound';
+    font-size: large;
+    padding: 10px;
+    border-style: none;
+    background-color: rgba(204, 174, 137, 0.25);
+    color: var(--text-color);
+    transition: var(--transition-time);
+    border-radius: 8px;
+}
+
+textarea {
+    width:100%;
+    font-family: 'VarelaRound';
+    font-size: large;
+    padding: 10px;
+    border-style: none;
+    background-color: rgba(204, 174, 137, 0.25);
+    color: var(--text-color);
+    transition: var(--transition-time);
+    border-radius: 8px;
+}
