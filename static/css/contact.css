@@ -32,27 +32,3 @@
     padding: 0 3rem;
     flex-direction: column;
 }
-
-input[type=text] {
-    width:100%;
-    font-family: 'VarelaRound';
-    font-size: large;
-    padding: 10px;
-    border-style: none;
-    background-color: rgba(204, 174, 137, 0.25);
-    color: var(--text-color);
-    transition: var(--transition-time);
-    border-radius: 8px;
-}
-
-textarea {
-    width:100%;
-    font-family: 'VarelaRound';
-    font-size: large;
-    padding: 10px;
-    border-style: none;
-    background-color: rgba(204, 174, 137, 0.25);
-    color: var(--text-color);
-    transition: var(--transition-time);
-    border-radius: 8px;
-}

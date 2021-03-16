@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="centerbox">
+    <div class="postsbox">
+        {% for post in posts %}
+        <div onclick="location.href = '{% url 'blog:post' post.id %}'" class="post">
+            <h1>{{post.title}}</h1>
+            <i>{{post.created}}</i>
+            {% autoescape off %}
+            ​{{post.content|truncatewords_html:75}}
+            {% endautoescape %}
+        </div>
+        <br>
+        {% endfor %}
+        {% if previous != 0 %}
+        <div style="margin: 1rem 0 0 2rem;">
+            <a class="button" href="{% url 'blog:index' previous %}">« Previous</a>
+        </div>
+        {% endif %}
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-moving">
+            <img src="{% static 'img/beach.png' %}" style="width:80%;">
+            <h2>Brandon's Blog</h2>
+            <p>A place for me to blog my essays, random thoughts, and about the books I read.</p>
+            <div class="sidebar-bottom">
+                <a href="#"><img src="{% static 'img/backtotop.png' %}" style="width:25%"></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

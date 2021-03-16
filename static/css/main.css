@@ -14,10 +14,6 @@ a:not(.button):hover {
     opacity: 0.5;
 }
 
-::selection {
-    background: var(--sand-color);
-}  
-
 body {
     color: var(--text-color);
     font-size: large;
@@ -223,4 +219,28 @@ input:checked + .slider:before {
     font-size: medium;
     cursor: default;
     opacity: 0.5;
+}
+
+input[type=text] {
+    width:100%;
+    font-family: 'VarelaRound';
+    font-size: large;
+    padding: 10px;
+    border-style: none;
+    background-color: rgba(204, 174, 137, 0.25);
+    color: var(--text-color);
+    transition: var(--transition-time);
+    border-radius: 8px;
+}
+
+textarea {
+    width:100%;
+    font-family: 'VarelaRound';
+    font-size: large;
+    padding: 10px;
+    border-style: none;
+    background-color: rgba(204, 174, 137, 0.25);
+    color: var(--text-color);
+    transition: var(--transition-time);
+    border-radius: 8px;
 }

@@ -13,6 +13,7 @@
     --sky-color: rgb(202, 227, 248);
     --ocean-color: rgb(98, 168, 224);
     --transition-time: 0.4s;
+    --shadow-black: #aaa;
 }
 
 [data-theme="dark"] {
@@ -25,4 +26,5 @@
     --sky-color: rgb(202, 227, 248);
     --ocean-color: rgb(98, 168, 224);
     --transition-time: 0.4s;
+    --shadow-black: black;
 }
