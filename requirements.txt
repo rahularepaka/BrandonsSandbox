@@ -1,3 +1,4 @@
+django-heroku
 gunicorn
 dj-database-url
 Django
