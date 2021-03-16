@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'placeholder'
+SECRET_KEY = 'ys9)+&=!uokl7+)wxd*50$3fj)at-vp6l)m9kuv2m3r^_1n(ny'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -122,7 +122,7 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
-db_from_env = dj_database_url.config(conn_max_age=500)
+#db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
