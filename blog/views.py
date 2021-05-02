@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Post
+from django.core import serializers
+from django.http import HttpResponse
 
 import math
 
@@ -17,3 +19,8 @@ def index(request, page=1):
 def post(request, postid):
     post = Post.objects.get(id=postid)
     return render(request, "post.html", {"post":post})
+
+def allposts(request):
+    posts = Post.objects.all()
+    post_list = serializers.serialize('json', posts)
+    return HttpResponse(post_list, content_type="text/json-comment-filtered")
