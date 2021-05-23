@@ -3,13 +3,15 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="shortcut icon" type="image" href="{% static 'img/favicon.ico' %}"/>
+        <title>Brandon's Sandbox</title>
         {% block style %}{% endblock %}
     </head>
     <body>
         <div id="root">
             <div class="header-container">
                 <div class="header-logo">
-                    <a href='{% url 'home' %}'>brandon's sandbox 🏖️</a>
+                    <a href='{% url 'home' %}'>brandon's sandbox <img style="height:25px;width:25px;" src="{% static 'img/favicon.png' %}"/></img></a>
                 </div>
                 <div class="header-navbar">
                     <div class="header-navbar-item"><a href="{% url 'home' %}">about</a></div>
