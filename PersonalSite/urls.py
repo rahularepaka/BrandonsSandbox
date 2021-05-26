@@ -24,8 +24,8 @@ import PersonalSite.views as core_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('resume', TemplateView.as_view(template_name='resume.html'), name='resume'),
-    path('projects', TemplateView.as_view(template_name='projects.html'), name='projects'),
-    path('contact', TemplateView.as_view(template_name='contact.html'), name='contact'),
-    path('blog', include('blog.urls'), name='blog'),
+    path('resume/', TemplateView.as_view(template_name='resume.html'), name='resume'),
+    path('projects/', TemplateView.as_view(template_name='projects.html'), name='projects'),
+    path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
+    path('blog/', include('blog.urls'), name='blog'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

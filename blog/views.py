@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .models import Post
 from django.core import serializers
 from django.http import HttpResponse
+from django.http.response import JsonResponse
+import json
+
 
 import math
 
@@ -22,5 +25,6 @@ def post(request, postid):
 
 def allposts(request):
     posts = Post.objects.all()
-    post_list = serializers.serialize('json', posts)
-    return HttpResponse(post_list, content_type="text/json-comment-filtered")
+    output = serializers.serialize('json', posts)
+    output = json.dumps(json.loads(output), indent=4)
+    return HttpResponse(output, content_type="application/json")
