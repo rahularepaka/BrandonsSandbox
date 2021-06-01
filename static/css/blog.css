@@ -22,13 +22,23 @@
     width: 100%;
     position: sticky;
     top: 6rem;
-    height: 70vh;
+    height: 80vh;
 }
 
 .sidebar-bottom {
     width: 100%;
     position: absolute;
-    bottom: 3rem;
+    bottom: 5%;
+}
+
+.back-to-top {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: var(--transition-time);
+    text-align: right;
+}
+.back-to-top:hover {
+    opacity: 1;
 }
 
 .postsbox {
