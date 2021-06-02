@@ -13,7 +13,7 @@ def index(request, page=1):
     if request.method == 'POST':
         query = request.POST['searchbar']
         print(query)
-        posts = Post.objects.filter(Q(title__contains=query) | Q(content__contains=query)).order_by('id').reverse()
+        posts = Post.objects.filter(Q(title__icontains=query) | Q(content__icontains=query)).order_by('id').reverse()
         return render(request, "index.html", {"posts":posts, "previous":0, "searchquery":query})
     else:
         page = int(page)
