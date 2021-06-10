@@ -28,8 +28,4 @@ urlpatterns = [
     path('projects/', TemplateView.as_view(template_name='projects.html'), name='projects'),
     path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
     path('blog/', include('blog.urls'), name='blog'),
-
-    path('evan/C', TemplateView.as_view(template_name='evan/C.html'), name='C'),
-    path('evan/D', TemplateView.as_view(template_name='evan/D.html'), name='D'),
-    path('evan/E', TemplateView.as_view(template_name='evan/E.html'), name='E'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
