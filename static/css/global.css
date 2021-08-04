@@ -13,7 +13,7 @@
     --sky-color: rgb(202, 227, 248);
     --ocean-color: rgb(98, 168, 224);
     --transition-time: 0.4s;
-    --shadow-black: #aaa;
+    --shadow-black: rgba(0,0,0,0.25);
     
     --leather-brown: rgb(138, 124, 94);
 }
