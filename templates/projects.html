@@ -2,17 +2,220 @@
 {% load static %}
 
 {% block style %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
+<link rel="stylesheet" type="text/css" href="/static/css/projects.css">
 {% endblock %}
 
 {% block content %}
-<div class="accordion">
-    <div class="pocket">
-        <h1>Websites</h1>
+<div class="projectcontainer">
+
+    <div class="projectblock">
+        <center>
+                <h2><a href="https://github.com/rahularepaka/ObjectDetectionYolov4Web">YOLOv4 WebApp</a></h2>
+        </center>
+        <img src="/static/img/project/obj.jpg" class="projectimagebox">
+        <center>
+            <p>Object Detection using coco.names dataset , weights and configuration files of real time object detection algorithm
+            YOLOv4.
+            WebApp is made from Python using Streamlit and Object detection was possible using OpenCV and YOLOv4 tiny.
+            </p><br>
+            <p>
+                View the Real time Object Detection Demo : <a href="https://share.streamlit.io/rahularepaka/objectdetectionyolov4web/main/main.py">Streamlit</a>
+            </p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">June 2021 - July 2021</p>
+            <b>Keyword:</b> MU-mini-hacks , Computer Vision, Python, YOLOv4.
+        </div>
+    
     </div>
-    <div class="notecard notecard-1">
-        <div class="notecard-interior">Lorem Ipsum</div>
-        <div class="notecard-label">Personal Website</div>
+
+    <div class="projectblock">
+        <center>
+                <h2><a href="https://github.com/crypto-code/Car-Dashboard-Studio">SDC Dashboard</a></h2>
+        </center>
+        <img src="/static/img/project/car.jpg" class="projectimagebox">
+        <center>
+            <p>Designed a dashboard for Renault Twizy Self Driving Car at the GEMS DAA which unlocks the car using facial recognition
+            and can add multiple faces and syncs google maps and music player based on facial recognition.
+            The dashboard also can automatically start the car using Arduino and Relay based upon facial recognition using a
+            Bluetooth module.    
+            </p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">June 2021 - July 2021</p>
+            <b>Keyword:</b> GEMS-DAA , Collobration, Computer Vision, Python, API.
+        </div>
+    
     </div>
-</div>
-{% endblock %}
+
+
+
+    <div class="projectblock">
+        <center>
+                <h2><a href="https://github.com/rahularepaka/Project-Cyclops">Project Cyclops</a></h2>
+        </center>
+        <img src="/static/img/project/laser.jpg" class="projectimagebox">
+        <center>
+            <p>Created a Laser Module for FarmBot Genesis as a Proof of Concept where the onboard camera would detect the weeds in the
+            farm and call the locations of the weeds using API and precisely go to the location, calculate the offset, and power the
+            laser to kill the weeds. This reduces mechanical movement, a faster and more efficient way to destroy weeds from farms.
+            This Module would roll out to all the farmbot consumers in 2023 (Expected).
+    
+            </p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">April 2021 - June 2021</p>
+            <b>Keyword:</b> Farmbot , Collobration, Computer Vision, Python, API.
+        </div>
+    
+    </div>
+
+
+    <div class="projectblock">
+        <center>
+                <h2><a href="https://github.com/rahularepaka/Recipe-Generator">Recipe Generator</a></h2>
+        </center>
+        <img src="/static/img/project/food.jpg" class="projectimagebox">
+        <center>
+            <p>The following python program will generate recipes and Diet-labels from the given ingredients and will create text file
+            with the details inside the file such Recipes and Diet-label along with Heading of the Ingredient and Date and Time of
+            the file created.
+            To simplify the program,the code utilises an API to call the api and recieve all the details of the food reciepes.
+    
+            </p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">December 2020</p>
+            <b>Keyword:</b> Python , No-Library Challenge, API.
+        </div>
+    
+    </div>
+
+
+    <div class="projectblock">
+        <center>
+                <h2><a href="https://github.com/rahularepaka/maskdetection">Mask w/ Temp Detection</a></h2>
+        </center>
+        <img src="/static/img/project/mask.jpg" class="projectimagebox">
+        <center>
+            <p>Used OpenCV to detect mask and to detect temperature from the thermal sensor from the Arduino using multithreading and
+            communication with python code and Arduino over a web-based interface using Dash in real-time.
+            It updates the google sheets using the Google API and takes
+            input such as QR and Barcode to identify and store the readings of a particular person to improved data analytics.
+
+            </p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">April 2020 – September 2020</p>
+            <b>Keyword:</b> Computer Vision , IoT, API, Microcontrollers
+        </div>
+        
+    </div>
+
+
+    <div class="projectblock">
+        <center>
+                <h2><a href="https://github.com/rahularepaka/arduino_Alcoholdetection">Alcohol Detection</a></h2>
+        </center>
+        <img src="/static/img/project/alco.jpg" class="projectimagebox">
+        <center>
+            <p>Used MQ3 sensor to detect alcohol consumption level from the smell of the breath and computed using the Arduino Mega.
+                Upon detection and checks, the level of consumption locks the engine before starting the vehicle and sends SMS to the
+                close contacts using the GSM sensor and onboard sim card.
+
+                It is IoT Enabled to recive data over the internet
+            </p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">November 2019 – January 2020</p>
+            <b>Keyword:</b> Arduino , IoT, Sensors, Microcontrollers
+        </div>
+    
+    </div>
+
+    <div class="projectblock">
+        <center>
+            <h2>
+                <h2><a href="https://www.khaleejtimes.com/uae/dubai/dubai-students-invent-machine-to-get-rid-of-massage-card-trash-1">Waste Card Collector</a></h2>
+            </h2>
+        </center>
+        <img src="/static/img/project/emc2.jpg" class="projectimagebox">
+        <center>
+            <p>Created an Arduino based machine using motor and 3D printed geared mechanism to collect cards in exchange for reward
+            points using computer vision and microcontrollers
+            This project is made to tackle littering and it was featured in Khaleej Times, Arabian Radio Network, Dubailand, LovinDubai, Mashable, and ArabicUK and
+            interviewed by Khaleej Times and few popular Radio stations such as City 1016 and Dubai Eye 103.8.</p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">July 2019 – August 2019</p>
+            <b>Keyword:</b> Arduino , Raspberry Pi , Python, C , Computer Vision
+        </div>
+    
+    </div>
+
+    <div class="projectblock">
+        <center>
+            <h2>
+                <h2><a href="">DOLLY</a></h2>
+            </h2>
+        </center>
+        <img src="/static/img/project/dolly.jpg" class="projectimagebox">
+        <center>
+            <p>Created a 6 Degree of Freedom robot controlled by stepper motor using custom gear ratio and controlled using
+                multiple types of microcontrollers over 12C Protocol and the movement is computed using the distance formulae.
+                It was used as proof of concept for a shipping company based in UAE which is used to clean large shipping containers.</p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">May 2018 – Jan 2019</p>
+            <b>Keyword:</b> Arduino , Raspberry Pi , Collobration, Computer Vision
+        </div>
+    </div>
+
+
+
+    <div class="projectblock">
+        <center>
+            <h2><h2><a href="https://github.com/rahularepaka/Project-Clara">CLARA</a></h2></h2>
+        </center>
+        <img src="/static/img/project/clara.jpg" class="projectimagebox">
+        <center>
+            <p>Created a 6 Degree of Freedom robot controlled by stepper motor using custom gear ratio and controlled using
+                multiple
+                types of microcontrollers over 12C Protocol and the movement is computed using the distance formulae.
+                Presented at the World Robotics Olympiad and Mahindra University Research Symposium.</p>
+        </center>
+    
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">May 2018 – Jan 2019</p>
+            <b>Keyword:</b> Arduino , Raspberry Pi , Python, C , Computer Vision
+        </div>
+    </div>
+
+    <div class="projectblock">
+        <center>
+            <h2><a href="">AgriBot – Companion</a></h2>
+        </center>
+        <img src="/static/img/project/agri.jpg" class="projectimagebox">
+        <center>
+            <p>Created a land-based robot controlled using ev3 as the master and Arduino connected to soil moisture sensor and pH
+            sensors to read and send the values to the master for computation
+            The robot also has a camera connected to raspberry pi and detects plants, colors, and weeds using OpenCV and also has a magnetic module that automatically swaps the module based
+            on the agriculture operation.</p>
+        </center>
+        
+        <div class="technology">
+            <p style="color:gray; font-style: italic;">Feb 2018 - May 2018</p>
+            <b>Keyword:</b> Arduino , Raspberry Pi , Python, C , Computer Vision
+        </div>
+    </div>
+
+
+    {% endblock %}

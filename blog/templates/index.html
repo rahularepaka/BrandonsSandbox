@@ -30,17 +30,20 @@
     </div>
     <div class="sidebar">
         <div class="sidebar-moving">
-            <img src="{% static 'img/beach.png' %}" style="width:80%;">
-            <h2>Brandon's Blog</h2>
-            <p>A place for me to blog my essays, random thoughts, and about the books I read.</p>
+            <!--<img src="{% static 'img/profile.jpeg' %}" style="width:80%;">-->
+            <h2>Blog</h2>
+            <p></p>
             <form action="{% url 'blog:index' %}" method="POST">
                 {% csrf_token %}
                 <input id="searchbar" type="text" placeholder="Search by keyword" name="searchbar">
-                <input class="button" type="submit" style="margin:10px;padding:0px 10px" value="&#187;">
+                <div class="back-to-top" onclick="document.body.scrollTop = 0;"><p>Back to Top</p>
+                <!--<input class="button" type="submit" style="margin:10px;padding:0px 10px" value="&#187;">-->
             </form>
+            <!---
             <div class="sidebar-bottom">
-                <div class="back-to-top" onclick="document.body.scrollTop = 0;"><img src="{% static 'img/backtotop.png' %}" style="width:25%"></div>
+                <div class="back-to-top" onclick="document.body.scrollTop = 0;"><p>Back to Top</p></div>
             </div>
+        -->
         </div>
     </div>
 </div>

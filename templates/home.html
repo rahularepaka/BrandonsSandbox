@@ -5,21 +5,35 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 {% endblock %}
 
+<body>
+
 {% block content %}
-<div class="centerbox">
-    <div><img style="width:20rem;height:20rem;" src="{% static 'img/profile.png' %}"></div>
-    <div style="width:30rem;margin:0 5rem;">
-        <p>Hey!🖐️</p>
-        <p>I'm Brandon Lee, a sophomore at Princeton majoring in "<a href="https://orfe.princeton.edu/" target="_blank">Operations
-            Research and Financial Engineering</a>,"—a mix of data science, probabilistic modeling, and decision
-            science. It's an interdisciplinary major that's perfect for my diverse interests in economics,
-            healthcare, and computer science.</p>
-        <p>In my spare time, you can usually find me <a href="{% url 'blog:index' %}">reading</a>, <a href="{% url 'projects' %}">coding</a>, or swimming.
-            I also love listening to podcasts—I highly recommend
-            <a href="https://www.npr.org/sections/money/" target="_blank">Planet Money</a>,
-            <a href="https://80000hours.org/podcast/" target="_blank">80,000 Hours</a>,
-            and <a href="https://www.thenosleeppodcast.com/" target="_blank">NoSleep.</a></p>
-        <p>Welcome to my website!</p>
-    </div>
+    <center>
+        <img src="static\img\webmain.png" style="width:900px;height:500px;" alt="centered image" />
+    </center>
+    
+    <!--<div style="width:30rem;margin:0 5rem;">
+    -->
+    <center><p style="font-size:20px">Hi 👋, I'm Rahul Arepaka</p></center>
+    <center><p style="font-size:15px">Working on Laser Weeding Robots 🌱 | CSE Undergrad @ Mahindra University 🧑‍💻 | Robotics Researcher 🧑‍🔧</p></center>
+
+    <center>
+        <div class="footer-external-link" title="GitHub"><a href="https://github.com/rahularepaka" target="_blank">😸</a></div>
+        <div class="footer-external-link" title="Email-Personal"><a href="mailto:rahul.arepaka@gmail.com">📧</a></div>
+        <div class="footer-external-link" title="Email-Education"><a
+                href="mailto:rahul20ucse156@mahindrauniversity.edu.in">📫</a></div>
+        <div class="footer-external-link" title="LinkedIn"><a href="https://linkedin.com/in/rahul-arepaka"
+                target="_blank">💼</a></div>
+        <div class="footer-external-link" title="Instagram"><a href="https://instagram.com/rahularepaka" target="_blank">📸</a>
+        </div>
+
+    </center>
+    <p></p></br>
+
+
+    <center>
+            <p style="font-size:12px">[Last Updated : 8-August-2021]</p>
+    </center>
+
 </div>
 {% endblock %}

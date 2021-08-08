@@ -1,14 +1,6 @@
-.centerbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 14rem - 2rem);
-    width: 100%;
-    flex-direction: row;
-}
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
     .centerbox {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
     }
 }

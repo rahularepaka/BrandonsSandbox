@@ -7,19 +7,22 @@
 
 {% block content %}
 <div class="centerbox">
-    <div style="width:80%">
+    <div style="width:100%">
         <h1>{{post.title}}</h1>
         <i>{{post.created}}</i>
         {% autoescape off %}
         ​{{post.content}}
         {% endautoescape %}
     </div>
+
+    <!---
     <div class="sidebar">
         <div class="sidebar-moving">
-            <img src="{% static 'img/beach.png' %}" style="width:80%;">
-            <h2>Brandon's Blog</h2>
-            <p>A place for me to blog my essays, random thoughts, and about the books I read.</p>
+            <img src="{% static 'img/profile.jpeg' %}" style="width:80%;">
+            <h2>Blog</h2>
         </div>
     </div>
+-->
+
 </div>
 {% endblock %}
