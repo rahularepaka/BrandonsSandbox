@@ -122,8 +122,10 @@ USE_TZ = True
 
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-# . os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+#STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
