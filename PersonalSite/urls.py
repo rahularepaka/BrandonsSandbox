@@ -24,7 +24,7 @@ import PersonalSite.views as core_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    #path('resume/', TemplateView.as_view(template_name='resume.html'), name='resume'),
+    path('resume/', TemplateView.as_view(template_name='resume.html'), name='resume'),
     path('achievements/', TemplateView.as_view(template_name='achievements.html'),
          name='achievements'),
     path('about/', TemplateView.as_view(template_name='about.html'),
