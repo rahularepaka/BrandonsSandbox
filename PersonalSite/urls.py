@@ -30,6 +30,8 @@ urlpatterns = [
     path('about/', TemplateView.as_view(template_name='about.html'),
          name='about'),
     path('projects/', TemplateView.as_view(template_name='projects.html'), name='projects'),
+    path('work/', TemplateView.as_view(template_name='work.html'),
+         name='work'),
     path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
     path('blog/', include('blog.urls'), name='blog'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
