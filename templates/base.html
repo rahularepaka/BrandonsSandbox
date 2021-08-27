@@ -1,68 +1,86 @@
 {% load static %}
 
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-        <link rel="shortcut icon" type="image" href="{% static 'img/ra.png' %}"/>
-        <title>Rahul Arepaka</title>
-        {% block style %}{% endblock %}
-    </head>
-    <body>
-        <div id="root">
-            <div class="header-container">
-                <div class="header-logo">
-                    <a href='{% url 'home' %}'><img style="height:25px;width:25px;" src="{% static 'img/ra.png' %}"/></img></a>
-                </div>
-                <div class="header-navbar">
-                    <div class="header-navbar-item"><a href="{% url 'about' %}">ℹ️ About</a></div>
-                    <div class="header-navbar-item"><a href="{% url 'achievements' %}">🏆 Achievements</a></div>
-                    <div class="header-navbar-item"><a href="{% url 'projects' %}">💻 Projects</a></div>
-                    <!---
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="shortcut icon" type="image" href="{% static 'img/ra.png' %}" />
+    <title>Rahul Arepaka</title>
+    {% block style %}{% endblock %}
+</head>
+
+<body>
+    <div id="root">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="{% url 'home' %}"><img style="height:25px;width:25px;"
+                        src="{% static 'img/ra.png' %}" /></img></a>
+            </div>
+            <div class="header-navbar">
+                <div class="header-navbar-item"><a href="{% url 'about' %}">ℹ️ About</a></div>
+                <div class="header-navbar-item"><a href="{% url 'achievements' %}">🏆 Achievements</a></div>
+                <div class="header-navbar-item"><a href="{% url 'projects' %}">💻 Projects</a></div>
+                <!---
                     <div class="header-navbar-item"><a href="{% url 'blog:index' %}">📚 Blog</a></div>
                     -->
-                    <!---
+                <!---
                     <div class="header-navbar-item"><a href="{%url 'resume' %}">🧑‍🏭 Work</a></div>
                     -->
-                    <div class="header-navbar-item"><a href="{% url 'work' %}">📚 Work</a></div>
-                    <div class="header-navbar-item"><a href="{% url 'contact' %}">📨 Contact</a></div>
-                
+                <div class="header-navbar-item"><a href="{% url 'work' %}">📚 Work</a></div>
+                <div class="header-navbar-item"><a href="{% url 'contact' %}">📨 Contact</a></div>
+
                 <div class="theme-switch-wrapper">
-                    
+
                     <label class="theme-switch" for="checkbox">
                         <input type="checkbox" id="checkbox" />
                         <div class="slider round"></div>
                     </label>
                     <div style="font-style: normal;">&ensp;<b>☾</b></div>
-                
-                </div>
-                </div>
 
+                </div>
             </div>
-            <div id="content-container">
-                {% block content %}
-                {% endblock %}
-            </div>
-            <div class="footer-container">
-                <div class="footer-copyright">MIT LICENSE : Copyright (c) 2021 Rahul Arepaka</div>
-                <div class="footer-external-links"> 
-                    
-                    <div class="footer-external-link" title="GitHub"><a href="https://github.com/rahularepaka" target="_blank">😸</a></div>
-                    <div class="footer-external-link" title="Email-Personal"><a href="mailto:rahul.arepaka@gmail.com">📧</a></div>
-                    <div class="footer-external-link" title="Email-Education"><a href="mailto:rahul20ucse156@mahindrauniversity.edu.in">📫</a></div>
-                    <div class="footer-external-link" title="LinkedIn"><a href="https://linkedin.com/in/rahul-arepaka" target="_blank">💼</a></div>
-                    <div class="footer-external-link" title="Resume"><a href="https://drive.google.com/file/d/1EcBxrVSWqRVwsi9I1mdeFuECedEFKIYX/view?usp=sharing" target="_blank">📃</a>
-                    <div class="footer-external-link" title="Curriculum vi­tae"><a href="https://drive.google.com/file/d/1YomMTng48dG2HwXGpGqphSdajIJYLel5/view?usp=sharing" target="_blank">📜</a>
-                    <div class="footer-external-link" title="Instagram"><a href="https://instagram.com/rahularepaka" target="_blank">📸</a></div>
+
+        </div>
+        <div id="content-container">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <!---
+        <div class="footer-container">
+            <div class="footer-copyright">MIT LICENSE : Copyright (c) 2021 Rahul Arepaka</div>
+        -->
+
+            <!--
+            <div class="footer-external-links">
+
+                <div class="footer-external-link" title="GitHub"><a href="https://github.com/rahularepaka"
+                        target="_blank">😸</a></div>
+                <div class="footer-external-link" title="Email-Personal"><a href="mailto:rahul.arepaka@gmail.com">📧</a>
+                </div>
+                <div class="footer-external-link" title="Email-Education"><a
+                        href="mailto:rahul20ucse156@mahindrauniversity.edu.in">📫</a></div>
+                <div class="footer-external-link" title="LinkedIn"><a href="https://linkedin.com/in/rahul-arepaka"
+                        target="_blank">💼</a></div>
+                <div class="footer-external-link" title="Resume"><a
+                        href="https://drive.google.com/file/d/1EcBxrVSWqRVwsi9I1mdeFuECedEFKIYX/view?usp=sharing"
+                        target="_blank">📃</a>
+                    <div class="footer-external-link" title="Curriculum vi­tae"><a
+                            href="https://drive.google.com/file/d/1YomMTng48dG2HwXGpGqphSdajIJYLel5/view?usp=sharing"
+                            target="_blank">📜</a>
+                        <div class="footer-external-link" title="Instagram"><a href="https://instagram.com/rahularepaka"
+                                target="_blank">📸</a></div>
                     </div>
-                    
+
                 
                 </div>
             </div>
+        -->
         </div>
-    </body>
-    <footer>
-        <script src="{% static 'js/main.js' %}"></script>
-        {% block script %}
-        {% endblock %}
-    </footer>
+</body>
+<footer>
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block script %}
+    {% endblock %}
+</footer>
+
 </html>

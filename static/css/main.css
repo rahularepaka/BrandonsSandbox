@@ -20,11 +20,50 @@ body {
     font-family:'VarelaRound';
     margin: 0;
     height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
 }
 
 #root {
     display: flex;
     flex-direction: column;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
 }
 
 .header-container {
@@ -94,12 +133,14 @@ body {
     bottom: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    height: 4rem;
     transition: var(--transition-time);
+    height = 100px;
+    margin-top: -100px;
+    clear: both;
 }
 
 .footer-copyright {
-    position: absolute;
+    position: center;
     left: 0;
     display: flex;
     align-items: center;
@@ -113,20 +154,23 @@ body {
     display: flex;
     align-items: center;
     padding-right: 5rem;
+
 }
 
 .footer-external-link {
     display: inline;
     padding: 5px;
+
 }
 
 .footer-external-link a {
     text-decoration: none;
     transition: var(--transition-time);
-}
+
 
 .footer-external-link a:hover {
     opacity: 0.3;
+
 }
 
 .theme-switch-wrapper {
