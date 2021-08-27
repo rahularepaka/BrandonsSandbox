@@ -13,22 +13,29 @@
     <div id="root">
         <div class="header-container">
             <div class="header-logo">
+                <!--
                 <a href="{% url 'home' %}"><img style="height:25px;width:25px;"
                         src="{% static 'img/ra.png' %}" /></img></a>
+                -->
+                <a href="{% url 'home' %}">🏠</a>
             </div>
+
+
             <div class="header-navbar">
-                <div class="header-navbar-item"><a href="{% url 'about' %}">ℹ️ About</a></div>
-                <div class="header-navbar-item"><a href="{% url 'achievements' %}">🏆 Achievements</a></div>
-                <div class="header-navbar-item"><a href="{% url 'projects' %}">💻 Projects</a></div>
+                <div class="header-navbar-item"><a href="{% url 'about' %}">😁</a></div>
+                <div class="header-navbar-item"><a href="{% url 'achievements' %}">🏆</a></div>
+                <div class="header-navbar-item"><a href="{% url 'projects' %}">🦾</a></div>
+                
                 <!---
                     <div class="header-navbar-item"><a href="{% url 'blog:index' %}">📚 Blog</a></div>
-                    -->
+                -->
                 <!---
                     <div class="header-navbar-item"><a href="{%url 'resume' %}">🧑‍🏭 Work</a></div>
                     -->
-                <div class="header-navbar-item"><a href="{% url 'work' %}">📚 Work</a></div>
-                <div class="header-navbar-item"><a href="{% url 'contact' %}">📨 Contact</a></div>
-                
+
+                <div class="header-navbar-item"><a href="{% url 'work' %}">👷‍♂️</a></div>
+                <div class="header-navbar-item"><a href="{% url 'contact' %}">📞</a></div>
+
                 <!--
                 <div class="theme-switch-wrapper">
 
@@ -38,6 +45,7 @@
                     </label>
                     <div style="font-style: normal;">&ensp;<b>☾</b></div>
                 -->
+    
                 </div>
             </div>
 
@@ -78,7 +86,9 @@
         -->
         </div>
 </body>
+
 <footer>
+
     <script src="{% static 'js/main.js' %}"></script>
     {% block script %}
     {% endblock %}
