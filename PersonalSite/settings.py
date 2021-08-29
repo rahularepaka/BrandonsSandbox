@@ -134,7 +134,8 @@ STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = ['https://rahularepaka.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://rahularepaka.herokuapp.com',
+                 'rahularepaka.herokuapp.com', '127.0.0.1']
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
